@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin:0 auto;
+  padding: 0;
+}
+
+
+body {
+  background-color:#343a61;
+  color:#fff;
+  text-align:center;
+  font-family: 'Silkscreen', cursive;
+}
+
+/* LAYOUT */
+.container {
+  min-height:100vh;
+  width:100%;
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+}
+
+.score-counter,
+.foul-counter,
+.timeout,
+.period-counter {
+  margin-bottom:30px;
+}
+
+
+
+/* TYPOGRAPHY */
+h2 {
+  font-size:50px;
+}
+
+h3 {
+  font-size:50px;
+}
+
+p {
+  font-size:50px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.score-box {
+  font-size:80px;
+  font-weight:bold;
+  width:500px;
+  height:300px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color:#000;
+  color:#fe5555;
+  border-radius:20px;
+  margin:20px 20px 30px 20px;
+}
+
+/* BUTTONS */
+.button {
+  background-color:transparent;
+  border:2px solid #fff;
+  color:#fff;
+  padding:10px 60px 10px 60px;
+  margin:5px 5px 10px 5px;
+  border-radius:10px;
+  font-size:30px;
+  font-family: 'Silkscreen', cursive;
+}
+
+.add-button {
+  background-color:transparent;
+  border:2px solid #fff;
+  color:#fff;
+  border-radius:10px;
+  padding:10px 40px 10px 40px;
+  margin-right:10px;
+  margin-left:10px;
+  font-size:30px;
+  font-family: 'Silkscreen', cursive;
+}
