@@ -5,18 +5,23 @@
 *::before {
   box-sizing: border-box;
   margin:0 auto;
-  padding: 0;
 }
 
-
 body {
-  background-color:#343a61;
+  background-color: #3f3f71;
   color:#fff;
   text-align:center;
   font-family: 'Silkscreen', cursive;
 }
 
-/* LAYOUT */
+/* LAYOUTS */
+.title {
+  position:absolute;
+  transform:translate(-50%,-50%);
+  top:10%;
+  left:50%;
+}
+
 .container {
   min-height:100vh;
   width:100%;
@@ -32,9 +37,11 @@ body {
   margin-bottom:30px;
 }
 
-
-
 /* TYPOGRAPHY */
+h1 {
+  font-size:70px;
+}
+
 h2 {
   font-size:50px;
 }
@@ -57,7 +64,8 @@ p {
   display:flex;
   align-items:center;
   justify-content:center;
-  background-color:#000;
+  background-color: #505060;
+  background-image: linear-gradient(225deg, #393939 0%, #252525 50%, #101010 100%);
   color:#fe5555;
   border-radius:20px;
   margin:20px 20px 30px 20px;
@@ -73,16 +81,58 @@ p {
   border-radius:10px;
   font-size:30px;
   font-family: 'Silkscreen', cursive;
+  cursor:pointer;
+  transition:200ms;
+}
+
+.button:hover {
+  background-color:#fff;
+  color:#343a61;
 }
 
 .add-button {
-  background-color:transparent;
-  border:2px solid #fff;
-  color:#fff;
+  border:2px solid transparent;
   border-radius:10px;
   padding:10px 40px 10px 40px;
   margin-right:10px;
   margin-left:10px;
   font-size:30px;
   font-family: 'Silkscreen', cursive;
+  cursor:pointer;
+  background-color:#fff;
+  color:#343a61;
+  transition:200ms;
+}
+
+.add-button:hover {
+  background-color:transparent;
+  color:#fff;
+  border:2px solid #fff;
+}
+
+#new-game-button {
+  padding:10px 80px 10px 80px;
+  font-size:50px;
+}
+
+@media only screen and (max-width: 1700px){
+  /*Tablets [601px -> 1700px]*/
+  h1 {
+    display:none;
+  }
+
+  .button {
+    padding:10px 20px 10px 20px;
+    margin:5px 5px 10px 5px;
+    border-radius:10px;
+    font-size:20px;
+    font-family: 'Silkscreen', cursive;
+    cursor:pointer;
+    transition:200ms;
+  }
+
+  #new-game-button {
+    padding:10px 20px 10px 20px;
+    font-size:40px;
+  }
 }
